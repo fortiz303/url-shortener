@@ -1,0 +1,13 @@
+name: "Close URL shortener"
+
+on: [push]
+
+jobs:
+  deploy-url-shortener:
+    runs-on: ubuntu:latest
+    steps:
+      - name: "Chechout limistah:url shortener"
+        uses: actions/checkout@v1
+        with:
+          repository: "limistah/url-shortener"
+          ref: "main"
